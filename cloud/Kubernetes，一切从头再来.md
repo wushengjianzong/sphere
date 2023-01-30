@@ -1,0 +1,34 @@
++ 为什么说kubernetes是分布式操作系统内核
+	+ 对比kubernetes和swarm/mesos
+	+ 对比kubernetes和linux
++ 3+3思维快速建立kubernetes学习脉络
+	+ 控制面
+		+ kube-apiserver + etcd
+			+ restful的得与失
+			+ 存储与消息一体化的未来
+		+ kube-controller-manager
+			+ 事件驱动与状态机模式
+			+ operator：client-go的层层
+		+ kube-scheduler
+			+ 时代造势：在离线混合部署的兴起
+			+ 软件工程之美：框架化与二次开发
+	+ 工作面
+		+ kubelet
+			+ kubelet也是控制器模式
+			+ virtual-kubelet：佛说节点，即非节点，是名节点
+		+ 计算
+			+ docker、containerd与oci那些事儿
+			+ 软隔离容器与硬隔离容器
+		+ 网络
+			+ kube-proxy的消失：容器网络与服务网格之争
+			+ 万变不离其宗：容器网络还能打几张牌
+		+ 存储
+			+ 选择困难症：ceph与openebs
+			+ 分布式存储的尴尬处境
++ 杂篇
+	+ kube-apiserver的授权、鉴权与准入控制
+	+ 什么，kubernetes居然全身可插拔？
+	+ 为什么没有coredns：自建kubernetes的局限性
+	+ containerd nri与device plugin: 软硬件融合的味道
++ 参考资料
+	+ [敖小剑.云计算的历史](https://skyao.io/learning-cloudnative/docs/introduction/history.html)
