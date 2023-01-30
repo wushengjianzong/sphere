@@ -3,15 +3,18 @@
 	+ 对比kubernetes和linux
 + 3+3思维快速建立kubernetes学习脉络
 	+ 控制面
-		+ kube-apiserver + etcd
-			+ restful的得与失
+		+ etcd
+			+ 从etcd看分布式kv数据库
 			+ 存储与消息一体化的未来
+		+ kube-apiserver
+			+ restful的得与失
+			+ (kube-apiserver二开场景)
 		+ kube-controller-manager
 			+ 事件驱动与状态机模式
-			+ operator：client-go的层层
+			+ 从client-go到controller-runtime再到operator
 		+ kube-scheduler
 			+ 时代造势：在离线混合部署的兴起
-			+ 软件工程之美：框架化与二次开发
+			+ 软件工程之美：kube-scheduler的框架化与二次开发
 	+ 工作面
 		+ kubelet
 			+ kubelet也是控制器模式
@@ -27,7 +30,6 @@
 			+ 分布式存储的尴尬处境
 + 杂篇
 	+ kube-apiserver的授权、鉴权与准入控制
-	+ 什么，kubernetes居然全身可插拔？
 	+ 为什么没有coredns：自建kubernetes的局限性
 	+ containerd nri与device plugin: 软硬件融合的味道
 + 参考资料
