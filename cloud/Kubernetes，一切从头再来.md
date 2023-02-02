@@ -1,6 +1,7 @@
 + 为什么说kubernetes是分布式操作系统内核
   + 对比kubernetes和swarm/mesos
   + 对比kubernetes和linux
+  + 分久必合，合久必分——分布式操作系统的演进可能
 + 4+4思维快速建立kubernetes学习脉络
   + 控制面
     + etcd
@@ -31,6 +32,7 @@
 + 杂篇
   + kube-apiserver的授权、鉴权与准入控制
   + 为什么没有coredns：自建kubernetes的局限性
-  + containerd nri与device plugin: 软硬件融合的味道
+  + containerd nri与device plugin：软硬件融合的味道
+  + cluster api：kubernetes的自我管理之道
 + 参考资料
   + [敖小剑.云计算的历史](https://skyao.io/learning-cloudnative/docs/introduction/history.html)
